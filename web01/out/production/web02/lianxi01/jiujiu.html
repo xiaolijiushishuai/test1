@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+            border:1px solid red;
+        }
+    </style>
+    <script>
+        document.write("<table align='center'>")
+        for(var a=1;a<=9;a++){
+            document.write("<tr>")
+            for(var b=1;b<=a;b++){
+                document.write("<td >")
+                document.write(a+"*"+b+"="+a*b+"&nbsp;&nbsp;&nbsp")
+                document.write("</td>")
+            }
+            // document.write("<br>")
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

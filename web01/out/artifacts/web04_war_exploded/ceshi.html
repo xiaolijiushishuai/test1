@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    function fun() {
+        /*$.ajax({
+            data:{"usesname":"xiaoli","password":123},
+            type:"POST",
+            url:"seshi01Servlet",
+            success:function (data) {
+                alert(data);
+            },
+        });*/
+        $.get("seshi01Servlet",{"usesname":"xiaoli","password":123},function (data) {
+            alert(data)
+        })
+    }
+    var person={"name":"xiaoli","age":123}
+    alert(person.name)
+    var persons=[{"name":"xiaoli","age":123},{"name":"xiaohong","age":123}]
+    alert(persons[1].name)
+    var ppp={"pei":[{"name":"xiaoli","age":1234},{"name":"xiaoli","age":123}]}
+    alert(ppp.pei[0].age)
+    for(var a in person){
+        alert(a+":"+person[a])
+    }
+    for(var a=0;a<persons.length;a++){
+        p=persons[a]
+        for(var b in p){
+            alert(b+":"+p[b])
+        }
+    }
+
+
+</script>
+<body>
+
+<input type="button" value="提交" onclick="fun();">
+<input type="text">
+</body>
+</html>

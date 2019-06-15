@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/web01.iml" filepath="$PROJECT_DIR$/web01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web02/web02.iml" filepath="$PROJECT_DIR$/../web02/web02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web03/web03.iml" filepath="$PROJECT_DIR$/../web03/web03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web04/web04.iml" filepath="$PROJECT_DIR$/../web04/web04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web05/web05.iml" filepath="$PROJECT_DIR$/../web05/web05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../web06/web06.iml" filepath="$PROJECT_DIR$/../web06/web06.iml" />
+    </modules>
+  </component>
+</project>

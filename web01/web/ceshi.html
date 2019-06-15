@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../jquery-3.3.1.min.js"></script>
+<script>
+    function fun() {
+        $.ajax({
+            data:{"usesname":"xiaoli","password":123},
+            type:"post",
+            url:"seshi01Servlet",
+            sucess:function (data) {
+                alert(data);
+            }
+        })
+    }
+</script>
+<body>
+
+<input type="button" value="提交" onclick="fun();">
+</body>
+</html>

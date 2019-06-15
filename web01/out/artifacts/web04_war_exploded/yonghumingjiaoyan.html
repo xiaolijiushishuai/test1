@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#username").blur(function () {
+                var usernamme = $(this).val();
+                var sp = $("#sqan");
+                $.get("jiaoyanServlet",{username:usernamme},function (data) {
+                    if(data.exces){
+                        sp.css("color","pink");
+                      sp.html("用户名可用")
+                    }
+                    else {
+                        sp.css("color","red");
+                        sp.html("用户名已存在")
+                    }
+                },"json")
+            })
+        })
+    </script>
+</head>
+<body>
+用户名<input type="text" id="username"><span id="sqan"></span><br>
+密码<input type="text">
+<input type="button" value="注册">
+</body>
+</html>

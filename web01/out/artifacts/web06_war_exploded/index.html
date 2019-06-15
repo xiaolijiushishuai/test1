@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        var uzi = $("#uzi");
+        $.get("listallServlet",{},function (data) {
+           $(data).each(function () {
+               var option="<option >"+this.name+"</option>"
+               uzi.append(option);
+           })
+        })
+    })
+</script>
+<body>
+<select id="uzi">
+    <option id="op">请选择</option>
+</select>
+</body>
+</html>
